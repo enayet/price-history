@@ -1,0 +1,435 @@
+/**
+ * Admin CSS for WooCommerce Price History & Sale Compliance Plugin
+ */
+
+/* Admin Settings Page */
+.wc-price-history-admin {
+    max-width: 1200px;
+}
+
+.wc-price-history-admin .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    vertical-align: top;
+}
+
+.wc-price-history-admin .form-table td {
+    padding: 15px 10px;
+}
+
+.wc-price-history-admin .form-table .description {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Settings Sections */
+.settings-section {
+    background: #ffffff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.settings-section-header {
+    background: #f1f1f1;
+    border-bottom: 1px solid #ccd0d4;
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.settings-section-content {
+    padding: 20px;
+}
+
+/* Field Dependencies */
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.plugin-dependent,
+.chart-dependent,
+.price-display-dependent {
+    transition: opacity 0.3s ease;
+}
+
+/* Color Picker Enhancements */
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-preview {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* Field Validation */
+.field-feedback {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.field-feedback.error {
+    color: #d63638;
+}
+
+.field-feedback.success {
+    color: #00a32a;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border-color: #d63638 !important;
+    box-shadow: 0 0 0 1px #d63638;
+}
+
+/* Settings Preview */
+.settings-preview {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.settings-preview h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #23282d;
+}
+
+.preview-lowest-price {
+    background: #f8f9fa;
+    border: 1px solid #e3e6ea;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.preview-chart-info {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Reports Page */
+.wc-price-history-reports {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.report-section {
+    margin-bottom: 30px;
+}
+
+.report-section h2 {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.report-actions {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.report-actions .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.report-actions .button::before {
+    content: "↓";
+    font-weight: bold;
+}
+
+/* Reports Table */
+.wp-list-table.wc-price-history-table {
+    border: 1px solid #ccd0d4;
+}
+
+.wp-list-table.wc-price-history-table th,
+.wp-list-table.wc-price-history-table td {
+    padding: 12px 8px;
+}
+
+.wp-list-table.wc-price-history-table .column-product {
+    width: 25%;
+}
+
+.wp-list-table.wc-price-history-table .column-compliance {
+    width: 15%;
+}
+
+/* Compliance Status */
+.compliance-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.compliance-status.compliant {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.compliance-status.non-compliant {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.compliance-status.unknown {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+/* Compliance Alerts */
+.compliance-alerts {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.alert-item {
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #f0c36d;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.alert-item:last-child {
+    margin-bottom: 0;
+}
+
+.alert-item h4 {
+    margin: 0 0 8px 0;
+    color: #856404;
+}
+
+.alert-item p {
+    margin: 0 0 10px 0;
+    color: #856404;
+}
+
+/* Filters */
+.reports-filters {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reports-filters label {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.reports-filters select,
+.reports-filters input[type="text"],
+.reports-filters input[type="date"] {
+    min-width: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wc-price-history-admin .form-table th,
+    .wc-price-history-admin .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .wc-price-history-admin .form-table th {
+        border-bottom: none;
+        font-weight: 600;
+    }
+
+    .reports-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .reports-filters > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .report-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wp-list-table {
+        font-size: 13px;
+    }
+
+    .wp-list-table th,
+    .wp-list-table td {
+        padding: 8px 4px;
+    }
+}
+
+/* Tab Navigation */
+.nav-tab-wrapper {
+    border-bottom: 1px solid #ccd0d4;
+    margin-bottom: 20px;
+}
+
+.nav-tab {
+    position: relative;
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0;
+    text-decoration: none;
+    border: 1px solid #ccd0d4;
+    border-bottom: none;
+    background: #f1f1f1;
+    color: #555;
+    cursor: pointer;
+}
+
+.nav-tab:hover {
+    background: #f9f9f9;
+    color: #464646;
+}
+
+.nav-tab-active {
+    background: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    color: #000000;
+    margin-bottom: -1px;
+}
+
+.tab-content {
+    display: none;
+    background: #ffffff;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+    padding: 20px;
+}
+
+/* Loading States */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+.loading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #007cba;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1001;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tooltips */
+.has-tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted #666;
+}
+
+.ui-tooltip {
+    background: #23282d;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 12px;
+    max-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ui-tooltip .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ui-tooltip .arrow.top {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #23282d;
+}
+
+/* Print Styles */
+@media print {
+    .wc-price-history-reports {
+        background: #ffffff !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .report-actions,
+    .nav-tab-wrapper,
+    .button {
+        display: none !important;
+    }
+
+    .wp-list-table {
+        border-collapse: collapse;
+    }
+
+    .wp-list-table th,
+    .wp-list-table td {
+        border: 1px solid #000000 !important;
+    }
+}
